@@ -79,13 +79,13 @@ resources:
           Enabled: true
 
   Outputs:
-    usersTableArn:
+    UsersTableArn:
       Value:
         Fn::GetAtt:
           - usersTable
           - Arn
       Export:
-        Name: ${self:custom.stage}-usersTableArn
+        Name: ${self:custom.stage}-UsersTableArn
     SocketConnectionsTableArn:
       Value:
         Fn::GetAtt:
